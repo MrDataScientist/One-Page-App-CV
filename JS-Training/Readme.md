@@ -5,3 +5,6 @@
 - Youtube videos.
 ## step3 :
 - Udemy and others
+
+## links :
+https://www.udemy.com/javascript-arrays/learn/v4/t/lecture/5091768
