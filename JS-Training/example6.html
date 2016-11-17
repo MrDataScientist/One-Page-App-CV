@@ -1,1 +1,59 @@
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+<script>
+    var myArrayA = ["one", 1, "a", "two", 55, "four"]; //implicit literal array
+    var myArrayD = ["xone", 14, "xa", "xtwo", 535, "xfour"]; //implicit literal array
+    console.log(myArrayA);
+
+    var myArrayB = new Array("one", "two", 55, "four");
+    console.log(myArrayB);
+
+    var myArrayC = new Array(5);
+    console.log(myArrayC);
+
+    myArrayA.push("FIVE");
+    console.log(myArrayA);
+
+    myArrayC.push("FIVE");
+    console.log(myArrayC);
+
+    console.log(myArrayA, myArrayA.length);
+    console.log(myArrayC, myArrayC.length);
+
+    console.log(typeof (myArrayA) == typeof (myArrayC));
+
+    myArrayA.push("SIX");
+    console.log(myArrayA[4]);
+    console.log(myArrayA[myArrayA.length - 1]);
+
+    myArrayA.forEach(function (d, e) {
+        console.log(d + " " + e);
+    })
+
+    myArrayA.pop();
+    console.log(myArrayA);
+
+    myArrayA.shift();
+    console.log(myArrayA);
+
+    myArrayA.splice(2, 1);
+
+    myArrayA[3] = "THREE";
+    console.log(myArrayA);
+    console.log(myArrayA.indexOf("THREE"));
+
+    console.log(myArrayA[5]);
+    myArrayA.sort();
+    console.log(myArrayA[myArrayA.length - 1]);
+    myArrayA.reverse();
+    console.log(myArrayA);
+
+    var myArrayE = myArrayA.concat(myArrayD);
+    console.log(myArrayE, myArrayE.length);
+
+    console.log(myArrayA.toString());
+    console.log(myArrayA.join(' :) '));
+
+    console.log(myArrayE);
+    console.log(myArrayE.slice(1, 3));
+</script>
